@@ -13,7 +13,6 @@ import com.ea.first.be.ws.client.FirstPortTypeV1;
 import com.ea.first.be.ws.client.FirstServiceV1;
 import com.ea.first.be.ws.client.GetAllNamesResponse;
 import com.ea.first.jbus.api.NameVO;
-import com.ea.first.jbus.web.controllers.FirstController;
 
 @Service(value="firstService")
 public class FirstServiceImpl implements FirstService{

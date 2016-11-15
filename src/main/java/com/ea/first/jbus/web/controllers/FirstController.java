@@ -1,14 +1,13 @@
 package com.ea.first.jbus.web.controllers;
 
-import it.bmed.asia.log.Logger;
-import it.bmed.asia.log.LoggerFactory;
-
 import java.util.Date;
 import java.util.List;
 
 import javax.ejb.EJBException;
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,8 +21,8 @@ import com.ea.first.jbus.business.FirstBusiness;
 @RequestMapping("/first")
 public class FirstController {
 	
-	//protected static transient Log log = LogFactory.getLog(FirstController.class);
-	Logger log = LoggerFactory.getLogger(FirstController.class);
+	protected static transient Log log = LogFactory.getLog(FirstController.class);
+	//Logger log = LoggerFactory.getLogger(FirstController.class);
 	
     @Autowired
     FirstBusiness business;
